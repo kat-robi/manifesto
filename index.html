@@ -1,1 +1,52 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Capture the Moment</title>
+<style>
+  body {
+    background: #000; /* black stage vibe */
+    overflow: hidden;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+  }
+  .poem {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+  }
+  .word {
+    position: absolute;
+    font-weight: bold;
+    transition: transform 0.3s, color 0.3s;
+    cursor: default;
+  }
+  /* Hover effect to mimic flashing lights */
+  .word:hover {
+    transform: scale(1.5) rotate(-10deg);
+    color: #fff;
+    text-shadow: 0 0 10px #fff, 0 0 20px #ff0, 0 0 30px #f0f;
+  }
+</style>
+</head>
+<body>
+  <div class="poem">
+    <span class="word" style="top:10%; left:15%; color:#ff0044; font-size:2rem;">I chase</span>
+    <span class="word" style="top:12%; left:40%; color:#00ffff; font-size:1.8rem;">the lights</span>
+    <span class="word" style="top:20%; left:10%; color:#ffcc00; font-size:1.5rem;">I freeze</span>
+    <span class="word" style="top:22%; left:45%; color:#ff00ff; font-size:1.7rem;">the beat</span>
+    <span class="word" style="top:30%; left:20%; color:#00ff00; font-size:1.6rem;">Shutter clicks</span>
+    <span class="word" style="top:32%; left:55%; color:#ff6600; font-size:1.8rem;">cut through the dark</span>
+    <span class="word" style="top:40%; left:25%; color:#00ffff; font-size:1.5rem;">Colors explode</span>
+    <span class="word" style="top:42%; left:50%; color:#ff0044; font-size:1.7rem;">across my frame</span>
+    <span class="word" style="top:50%; left:20%; color:#ffcc00; font-size:1.6rem;">Crowds pulse</span>
+    <span class="word" style="top:52%; left:55%; color:#ff00ff; font-size:1.8rem;">music roars</span>
+    <span class="word" style="top:60%; left:25%; color:#00ff00; font-size:1.5rem;">cameras flash</span>
+    <span class="word" style="top:62%; left:50%; color:#00ffff; font-size:1.6rem;">Every moment matters</span>
+    <span class="word" style="top:70%; left:30%; color:#ff0044; font-size:1.7rem;">I make it bold</span>
+    <span class="word" style="top:72%; left:55%; color:#ffcc00; font-size:1.6rem;">I make it messy</span>
+    <span class="word" style="top:80%; left:40%; color:#ff00ff; font-size:1.8rem;">I make it mine</span>
+  </div>
+</body>
+</html>
